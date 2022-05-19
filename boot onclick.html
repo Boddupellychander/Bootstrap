@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>table,th,td{border: 1px solid;}</style>
+</head>
+<body>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sal</title>
+    <style>
+        
+        table{
+            width: 50%; 
+        }
+    </style>
+</head>
+<body>
+  
+
+   
+   <button onclick="clickIndia()">Rupee</button>
+   <button onclick="clickAm()">Doller</button>
+   <button onclick="clickEuro()">Euro</button><br><br>
+
+   <div  style="overflow-x: auto; display: none;" id="india">
+    <table>
+        <div class="container">
+            <h2>Salary Table</h2>
+
+            <table class="table">
+                <thead>
+        <tr>
+            <th>SI No</th>
+            <th>emp</th>
+            <th>Salary</th>
+        </tr>
+        <tr>
+<td>1</td><td>Joy</td><td >&#8377 30000</td> </tr>
+ 
+        <tr>
+         <td>2</td>
+         <td>sss</td>
+         <td>&#8377 45000</td>
+</tr>
+ 
+     <tr>
+         <td>3</td>
+         <td>ggg</td>
+         <td>&#8377 80000</td>
+     </tr>
+ 
+     <tr>
+         <td>4</td>
+         <td>rrr</td>
+         <td >&#8377 50000</td>
+     </tr>
+ 
+     <tr>
+         <td>5</td>
+         <td>llll</td>
+         <td >&#8377 60000</td>
+     </tr>
+     </thead>
+ 
+    </table>
+ 
+ </div>
+
+   
+ <div  style="overflow-x: auto; display: none;" id="america"> 
+   <table>
+
+    <div class="container">
+        
+        <h2>Salary Table</h2>
+        <table class="table">
+            <thead>
+        
+       <tr>
+           <th>SI No</th>
+           <th>Name</th>
+           <th>Salary</th>
+       </tr>
+       <tr>
+           <td>1</td>
+           <td>Jjj</td>
+           <td >&#36 30000</td>
+       </tr>
+
+       <tr>
+        <td>2</td>
+        <td>Jll</td>
+        <td>&#36 45000</td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>Rrr</td>
+        <td>&#36 80000</td>
+    </tr>
+
+    <tr>
+        <td>4</td>
+        <td>aaa</td>
+        <td >&#36 50000</td>
+    </tr>
+
+    <tr>
+        <td>5</td>
+        <td>Skkk</td>
+        <td >&#36 60000</td>
+    </tr>
+    </thead>
+
+   </table>
+
+</div>
+
+<div  style="overflow-x: auto; display: none;" id="europe">
+    <table>
+        <div class="container">
+        <h2>Salary Table</h2>
+        <table class="table">
+            <thead>
+        <tr>
+            <th>SI No</th>
+            <th>Name</th>
+            <th>Salary</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>sss</td>
+            <td >&euro; 30000</td>
+        </tr>
+ 
+    <tr> <td>2</td> <td>Jjjj</td> <td>&euro; 45000</td> </tr>    
+    <tr> <td>3</td> <td>Rrrr</td> <td>&euro; 80000</td> </tr>
+    <tr> <td>4</td><td>Siii</td><td >&euro; 50000</td></tr>
+    <tr> <td>5</td><td>hhhh</td><td >&euro; 60000</td></tr>
+    </thead>
+ </table>
+ 
+ </div>
+
+  
+  <script>
+    
+    function clickIndia(){
+        var A = document.getElementById("america");
+        A.style.display = "none"; 
+        var I = document.getElementById("india");
+        I.style.display = "block";  
+        var E = document.getElementById("europe");
+        E.style.display = "none"; 
+    }
+    function clickAm(){
+        var A = document.getElementById("america");
+        A.style.display = "block"; 
+        var I = document.getElementById("india");
+        I.style.display = "none";  
+        var E = document.getElementById("europe");
+        E.style.display = "none"; 
+    }
+    function clickEuro(){
+        var A = document.getElementById("america");
+        A.style.display = "none"; 
+        var I = document.getElementById("india");
+        I.style.display = "none";  
+        var E = document.getElementById("europe");
+        E.style.display = "block"; 
+    }
+</script>
+
+</body>
+
+</html>

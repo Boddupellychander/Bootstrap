@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>table,th,td{border: 1px solid;}</style>
+</head>
+<body> <script>
+    function show1()
+    {
+       document.getElementById("ran").style.backgroundColor="yellow";
+        //document.getElementById("ran").style.display = "block";
+        document.getElementById("ran").style.display = "none";
+        
+    } 
+    function show2()
+    {
+        document.getElementById("ran1").style.backgroundColor="green";  
+        //document.getElementById("ran").style.display = "block";
+      document.getElementById("ran1").style.display = "none";
+    
+    }
+    function show3()
+    {
+        document.getElementById("ran2").style.backgroundColor="blue";
+       //document.getElementById("ran").style.display = "block";
+       document.getElementById("ran2").style.display = "none";
+       
+    }
+    </script>
+    <div> 
+        <button type="button" onclick="show1()" style ="background-color:brown;"> Rupee</button>
+        <button type="button" onclick="show2()">Doller</button>
+        <button type="button" onclick="show3()">Euro</button>
+    </div>
+    <table id="ran" ><tr> <th>s no</th><th>name</th><th>salary</th></tr>
+        <tr><td>1</td><td>ravi</td><td>&#8377 20000</td></tr>
+        <tr><td>2</td><td>r</td><td>&#8377 25000</td></tr>
+        <tr><td>3</td><td>ra</td><td>&#8377 30000</td></tr>
+    </table>
+    <table id="ran1"><tr> <th>s no</th><th>name</th><th>salary</th></tr>
+        <tr><td>1</td><td>ram</td><td>$ 30000</td></tr>
+        <tr><td>2</td><td>aaa</td><td>$ 20000</td></tr>
+        <tr><td>3</td><td>bbb</td><td>$ 24000</td></tr>
+    </table>
+    <table id="ran2" ><tr> <th>s no</th><th>name</th><th>salary</th></tr>
+        <tr><td>1</td><td>sai</td><td>&euro; 30000</td></tr>
+        <tr><td>1</td><td>ttt</td><td>&euro; 25000</td></tr>
+        <tr><td>1</td><td>ddd</td><td>&euro; 20000</td></tr>
+    </table>
+
+<div class="container">
+  <h2>Emp Details </h2>
+  <p>The Show The Details</p>            
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>E name</th>
+        <th>E Lastname</th>
+        <th>Email</th>
+        <th>salary</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+        <td>&euro; 20000</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+        <td>&euro; 25000</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+        <td>&euro; 30000</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
